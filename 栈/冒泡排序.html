@@ -1,0 +1,35 @@
+<!--
+ * @Description: 
+ * @Author: Mogy
+ * @Date: 2021-12-24 14:57:11
+ * @LastEditors: Mogy
+ * @LastEditTime: 2021-12-24 15:02:29
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let temp = 0
+        let arr = [1, 22, 12, 23, 22, 18, 89]
+        for (i = 0; i < arr.length - 1; i++) {
+            for (j = 0; j < arr.length - i - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    temp = arr[j + 1]
+                    arr[j + 1] = arr[j]
+                    arr[j] = temp
+                }
+            }
+        }
+        console.log(arr);
+    </script>
+</body>
+
+</html>
